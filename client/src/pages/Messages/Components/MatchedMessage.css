@@ -1,0 +1,45 @@
+.matched-message-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 8px;
+	margin-bottom: 10px;
+	cursor: pointer;
+	border-radius: 15px;
+
+	&:hover {
+		background-color: #da4961;
+	}
+}
+
+.avatar {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-right: 16px;
+}
+
+.matchedMessage {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	cursor: pointer;
+	margin-top: 10px;
+	background-color: burlywood;
+}
+
+.matchedMessage:hover {
+	background-color: blueviolet;
+}
+
+.matchedMessageImg {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-right: 20px;
+}
+
+.matchedName {
+	font-weight: 500;
+}

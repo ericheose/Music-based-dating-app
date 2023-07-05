@@ -1,0 +1,51 @@
+.chatCard {
+    margin: 1rem;
+    border-radius: 20px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid rgb(255, 234, 150);
+    border-radius: 20px;
+    background-color: hsla(321, 58%, 62%, 0.5);
+    position: relative;
+    max-width: 620px;
+}
+#profileDiv {
+    display: flex;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex: 1;
+}
+#profilePic {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+    z-index: 5;
+}
+#profilePic:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+#rightContents {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 1rem;
+    flex: 3;
+}
+#lastMessage p {
+    align-self: center;
+}
+#bottomBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#bottomBar Button {
+    background-color: rgb(186, 133, 246);
+    margin-right: 0.5rem;
+}

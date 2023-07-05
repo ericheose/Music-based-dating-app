@@ -1,0 +1,213 @@
+.matchCard {
+    margin: 1rem;
+    border-radius: 20px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(255, 234, 150);
+    border-radius: 20px;
+    background-color: hsla(321, 58%, 62%, 0.5);
+    position: relative;
+    max-width: 800px;
+}
+
+.matchCard::before {
+    background: radial-gradient(5000px circle at var(--mouse-x) var(--mouse-y),
+            rgba(100, 177, 218, 0.25) 0%,
+            transparent 40%);
+    border-radius: inherit;
+    content: "";
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    opacity: 0;
+    transition-duration: 1000ms;
+}
+
+.matchCard:hover::before {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.matchSymbol {
+    flex: 1;
+    align-self: center;
+}
+
+.matchSymbol img {
+    width: 100%;
+    height: auto;
+}
+
+.topRowMatch {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.profileImage {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    max-width: 200px;
+    aspect-ratio: 1 / 1;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+    z-index: 5;
+}
+
+.profileImage:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.topRowMatch p {
+    align-self: center;
+}
+
+.matchSelfUser {
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-right: 1rem;
+}
+
+.matchedUser {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-left: 1rem;
+}
+
+.bottomRowMatch {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+
+.bottomRowMatch p {
+    align-self: flex-start;
+}
+
+#mainMatchBox {
+    display: flex;
+    flex-direction: column;
+}
+
+#newMatchBox {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 10px;
+}
+
+#chatBox {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.profileImageChat {
+    width: 130px;
+    border-radius: 20px;
+}
+
+#SingleMatch {
+    border-radius: 30px;
+    background-color: rgba(112, 112, 112, 0.555);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
+    gap: 10px;
+    margin: 50px;
+}
+
+.pfp {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.profileInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+}
+
+.chatInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+}
+
+.matchButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+}
+
+.cardbuttons {
+    width: 150px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #3f3f3f3f;
+}
+
+.cardbuttons:hover {
+    cursor: pointer;
+    background-color: #2929296c;
+}
+
+.matchedMusicInfo {
+    align-self: center;
+}
+.matchedMusicInfo p {
+    font-size: 20px;
+}
+.bottomRowMatch p {
+    font-size: 20px;
+}
+
+h1,
+h3,
+p {
+    margin: 0;
+}
+.landingOutline {
+    display: flex;
+    flex-direction: column;
+}
+#noMatchGenerate {
+    max-width: 250px;
+    align-self: center;
+    background-image: linear-gradient(to right, #f297a6, #daae4f);
+    margin-bottom: 1rem;
+    font-size: 20px;
+    padding: 1rem;
+}
+.centerDiv {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+#moreMatchGenerate {
+    max-width: 300px;
+    background-image: linear-gradient(to right, #f297a6, #daae4f);
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-size: 20px;
+}

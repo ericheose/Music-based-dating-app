@@ -1,0 +1,17 @@
+.badge {
+	background-color: #f297a6;
+	color: white;
+	padding: 4px 4px;
+	font-size: 12px;
+	border-radius: 12px;
+	width: auto;
+	margin: 4px;
+}
+
+#content {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: flex;
+    direction: row;
+	width: 400px;
+}
